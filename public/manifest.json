@@ -9,7 +9,7 @@
     }
   ],
   
-  "start_url": ".",
+  "start_url": "https://xhuljana1.github.io/react-chat-app/login",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
