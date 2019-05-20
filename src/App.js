@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import { Route, Switch, Redirect} from 'react-router-dom'
 import './App.css';
+import chat from './lib/chat';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Login, Groupchat } from "./components"
+
+
+class App extends Component{
+  constructor(props){
+  super(props)
+  chat.init()
+  }
+  render(){
+    return(
+      <Switch>
+        <Redirect exact from="/" to="/login"/>
+        <Route path="/login" component={Login} />
+        <Route path="/chat" component={Groupchat}/>
+      </Switch>
+    )
+  }
 }
 
 export default App;
