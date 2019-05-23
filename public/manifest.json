@@ -1,6 +1,7 @@
+
 {
-  "short_name": "Chat App",
-  "name": "My simple Chat App with React.js",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +9,6 @@
       "type": "image/x-icon"
     }
   ],
-  
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
