@@ -1,5 +1,6 @@
 {
   "name": "chatapp",
+  "homepage": "https://xhuljana1.github.io/react-chat-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,12 +22,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ]
-  },
-  "homepage": "https://xhuljana1.github.io/react-chat-app"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
